@@ -3,8 +3,8 @@ GiANT (Graphical Algebraic Number Theory) is a graphical interface for working w
 written in Java and runs on top of the computer algebra system [KASH 2.5](http://www.math.tu-berlin.de/~kant/kash.html).
 
 #Installation
-1. Get Java 1.4 or higher
-2. Install [KASH 2.5](http://www.math.tu-berlin.de/%7Ekant/download.html).
+1. Get [Java](https://java.com/en/download/index.jsp). GiANT requires Java 1.4 or higher.
+2. Install [KASH 2.5](http://www.math.tu-berlin.de/%7Ekant/download.html)
 3. Download (or compile from source) [GiANT.jar](http://sourceforge.net/projects/giantsystem/files/)
 4. Place a copy of the [`giant.kash`](https://github.com/akarve/giant/tree/master/giantystem/dev) file in the same directory as the `kash` executable (`KASH_2.5` by default).
 5. To launch GiANT, execute `java -jar GiANT.jar /PATH/kashdir`. (`/PATH/kashdir` is the path to the *parent directory* of the `kash` executable.)
