@@ -1,0 +1,97 @@
+ #*GiANT - Graphical Algebra System
+ #*
+ #*Copyright (C) 2005  Aneesh Karve, e33nflow@users.sourceforge.net
+ #*
+ #*This program is free software; you can redistribute it and/or
+ #*modify it under the terms of the GNU General Public License
+ #*as published by the Free Software Foundation; either version 2
+ #*of the License, or (at your option) any later version.
+ #*
+ #*This program is distributed in the hope that it will be useful,
+ #*but WITHOUT ANY WARRANTY; without even the implied warranty of
+ #*MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ #*GNU General Public License for more details.
+ #*
+ #*You should have received a copy of the GNU General Public License
+ #*along with this program; if not, write to the Free Software
+ #*Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.*/
+
+#hand-rolled functions used by giant
+
+#prevent the parser from going crazy
+Time(false); 
+PRINTLEVEL("all",0);
+
+#don't repeat the same generator twice; given number of gens,
+#...otherwise same as IdealGenerators()
+GiantIdealGenerators := function(idl)
+	local raw;
+	raw := IdealGenerators(idl);
+	# this list has two generators in it
+	#for convenience first entry in list tells how many generators we return
+	if(raw[1]=raw[2]) then
+		return [raw[1]];
+	else
+		return raw;
+	fi;
+end;
+
+# for consistency always give back a list; like IdealGenerators
+GiantIdealIsPrincipal := function(idl)
+	return [IdealIsPrincipal(idl)];
+end;
+
+# for consistency always give back a list; like IdealGenerators
+# two args uses class group info flag = "classgroup"
+GiantIdealIsPrincipalCl := function(idl)
+	return [IdealIsPrincipal(idl, "classgroup")];
+end;
+
+# this is ClassGroupCyclicFactors WITHOUT the orders of each factor since
+# you can get that from OrderClassGroup
+GiantClassGroupFactors := function (mo)
+	local i, more, less;
+
+	more := OrderClassGroupCyclicFactors(mo);
+	less := [];
+
+	for i in [1..Length(more)] do
+		Add(less, more[i][1]);
+	od;
+
+	return less;
+end;
+
+
+# mo is the maximal order of o
+# we return the fundamental units of mo MOVED to o
+GiantOrderUnitsFund := function (mo, o)
+	local i, funits, funits2;
+
+	funits := OrderUnitsFund(mo);
+	funits2 := [];
+
+	for i in [1..Length(funits)] do
+		Add(funits2, EltMove(funits[i], o));
+	od;
+	return funits2;
+end;
+
+# OrderSubfield() in KASH [has some bug that makes it?] really slow
+# so we use this function instead (by Sebastian Pauli 20.June.2005)
+# test if K is a subfield of L
+GiantIsSubfield := function(K,L)
+	local L, K, s, S;
+
+	if OrderDeg(L) mod OrderDeg(K) <> 0 then
+		return false;
+	fi;
+
+	S := OrderSubfield(L,OrderDeg(K));
+	for s in S do
+		if OrderIsSubfield(K,s) then
+  			return true;
+		fi;
+	od;
+	return false;
+end;
