@@ -32,17 +32,12 @@ Theory] (http://jtnb.cedram.org/cedram-bin/article/JTNB_2006__18_3_721_0.pdf), [
 GiANT was introduced at the [MP60 Number Theory Conference](http://www.math.tu-berlin.de/~kant/MP60/), Technical University of Berlin, 10 June 2005. GiANT was featured at [Algebra and Computation 2005](http://tnt.math.metro-u.ac.jp/ac/2005/index.en.html),
 Tokyo Metropolitan University, 16 November 2005.
 
-
 #Compatibility 
 GiANT runs on Java 1.4 or higher. It has been tested on Mac OS X and some pure UNIX flavors, but not so much on Windows. GiANT requires a working installation of [KASH 2.5](http://www.math.tu-berlin.de/~kant/download.html), which is free.
-
 
 #Future development
 See the concluding remarks in the [GiANT paper](http://jtnb.cedram.org/cedram-bin/article/JTNB_2006__18_3_721_0.pdf)
 for ideas.
-
-#License
-GiANT source is open under the GNU General Public License (GPL).
 
 #Acknowledgments
 Special thanks to the [German Academic Exchange (DAAD)](http://www.daad.org/) and the [KANT Group at TU-Berlin](http://www.math.tu-berlin.de/~kant) for their support during the creation of GiANT.
