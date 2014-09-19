@@ -8,8 +8,8 @@ written in Java and runs on top of the computer algebra system [KASH 2.5](http:/
 3. Download (or compile from source) [GiANT.jar](http://sourceforge.net/projects/giantsystem/files/)
 4. Place a copy of the file [`giant.kash`](https://github.com/akarve/giant/tree/master/giantystem/dev) in the directory on your computer called "KASH_2.5 (also the directory that contains the `kash` executable.
 5. Launch Giant by typing the following on the command line:
-    java -jar GiANT.jar /Users/foo/kashdir
-The last argument `/Users/foo/kashdir` is the path to the *directory* in which the kash executable can be found, not the path of the executable itself.
+     java -jar GiANT.jar /Users/foo/kashdir
+`/Users/foo/kashdir` is the path to the parent *directory* of the `kash` executable.
 
 #Motivation
 Algorithms for dedicated computer algebra systems have developed
