@@ -23,7 +23,7 @@ cognitive load versus text-only algebra systems.
 * [towers of fields](http://giantsystem.sourceforge.net/images/tower.png)
 * [working with the class group](http://giantsystem.sourceforge.net/images/classGroup.png)
 * [building towers of fields (video)](http://giantsystem.sourceforge.net/images/towers.mov)
-* [working with fields using drag-and-drop (video)](http://giantsystem.sourceforge.net/images/drag-and-drop.mov).
+* [working with fields using drag-and-drop (video)](http://giantsystem.sourceforge.net/images/drag-and-drop.mov)
 
 #Paper, history
 If you use GiANT for research or development, please cite the paper: [GiANT: Graphical Algebraic Number
