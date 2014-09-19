@@ -1,6 +1,6 @@
 #Introduction
 GiANT (Graphical Algebraic Number Theory) is a graphical interface for working with number fields. It is
-written in Java and runs on top of the computer algebra system [KASH 2.5](http://www.math.tu-berlin.de/~kant/kash.html).
+written in Java and runs on top of the computer algebra system [KASH 2.5](http://www.math.tu-berlin.de/~kant/kash.html). In its present state it can be used for teaching and presentations.
 
 #Installation
 1. Get [Java](https://java.com/en/download/index.jsp). GiANT requires Java 1.4 or higher.
@@ -35,12 +35,12 @@ Tokyo Metropolitan University, 16 November 2005.
 #Compatibility 
 GiANT runs on Java 1.4 or higher. It has been tested on Mac OS X and some pure UNIX flavors, but not so much on Windows. GiANT requires a working installation of [KASH 2.5](http://www.math.tu-berlin.de/~kant/download.html), which is free.
 
-#Future development
-See the concluding remarks in the [GiANT paper](http://jtnb.cedram.org/cedram-bin/article/JTNB_2006__18_3_721_0.pdf)
-for ideas.
+#Future research & development
+* Bi-directional integration of GUI elements and text shell elements. (Currently, elements created in the GUI are only available in the GUI, and vice versa.)
+* See the *Conclusion* section of the [GiANT paper] for more ideas (http://jtnb.cedram.org/cedram-bin/article/JTNB_2006__18_3_721_0.pdf).*
 
 #Acknowledgments
 Special thanks to the [German Academic Exchange (DAAD)](http://www.daad.org/) and the [KANT Group at TU-Berlin](http://www.math.tu-berlin.de/~kant) for their support during the creation of GiANT.
 
 #Authors
-GiANT was created by [Aneesh Karve](http://www.aneeshkarve.com) and co-designed by [Sebastian Pauli](http://www.math.tu-berlin.de/~pauli/)
+GiANT was created by [Aneesh Karve](http://www.aneeshkarve.com) and co-designed by [Sebastian Pauli](http://www.math.tu-berlin.de/~pauli/).
