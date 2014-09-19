@@ -37,7 +37,7 @@ GiANT runs on Java 1.4 or higher. It has been tested on Mac OS X and some pure U
 
 #Future research & development
 * Bi-directional integration of GUI elements and text shell elements. (Currently, elements created in the GUI are only available in the GUI, and vice versa.)
-* See the *Conclusion* section of the [GiANT paper] for more ideas (http://jtnb.cedram.org/cedram-bin/article/JTNB_2006__18_3_721_0.pdf).*
+* See the *Conclusion* section of the [GiANT paper](http://jtnb.cedram.org/cedram-bin/article/JTNB_2006__18_3_721_0.pdf)  for more ideas
 
 #Acknowledgments
 Special thanks to the [German Academic Exchange (DAAD)](http://www.daad.org/) and the [KANT Group at TU-Berlin](http://www.math.tu-berlin.de/~kant) for their support during the creation of GiANT.
