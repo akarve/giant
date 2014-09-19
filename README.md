@@ -6,8 +6,8 @@ written in Java and runs on top of the computer algebra system [KASH 2.5](http:/
 1. Get Java 1.4 or higher
 2. Install [KASH 2.5](http://www.math.tu-berlin.de/%7Ekant/download.html).
 3. Download (or compile from source) [GiANT.jar](http://sourceforge.net/projects/giantsystem/files/)
-4. Place a copy of the file [`giant.kash`](https://github.com/akarve/giant/tree/master/giantystem/dev) in the directory on your computer called "KASH_2.5 (also the directory that contains the `kash` executable.
-5. To launch Giant execute `java -jar GiANT.jar /Users/foo/kashdir`. (`/Users/foo/kashdir` is the path to the parent *directory* of the `kash` executable.)
+4. Place a copy of the file [`giant.kash`](https://github.com/akarve/giant/tree/master/giantystem/dev) in the `KASH_2.5` directory where the `kash` executable lives.
+5. To launch GiANT, execute `java -jar GiANT.jar /Users/foo/kashdir`. (`/Users/foo/kashdir` is the path to the *parent directory* of the `kash` executable.)
 
 #Motivation
 Algorithms for dedicated computer algebra systems have developed
