@@ -138,7 +138,6 @@ public class City extends javax.swing.JPanel {
      */
     public final static int MAX_POPULATION = 50;
     
-            //list of towers in left-to-right order
 	/**
 	 * List of all towers in this city; left-to-right order
 	 */
