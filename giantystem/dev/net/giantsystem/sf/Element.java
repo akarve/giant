@@ -72,7 +72,7 @@ public class Element extends Variable{
            COL_WIDS[offset + i] = ADD_WIDS[i]; 
         }
     }
-        //pre:  argument to following pattern comes in trimmed (as by KASHTerm.Response)
+    //pre:  argument to following pattern comes in trimmed (as by KASHTerm.Response)
     /**
      * Regex Pattern to match +1 or -1
      */
@@ -151,7 +151,6 @@ public class Element extends Variable{
      */
     public Element(String name, String val){
         super(name, val);
-
     }
     
     /**
