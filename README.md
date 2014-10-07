@@ -1,3 +1,4 @@
+![GiANT: inspector & tower of fields](http://www.visualmagnetic.com/wp-content/uploads/2005/06/giant-classGroup.png)
 #Introduction
 GiANT (Graphical Algebraic Number Theory) is a graphical interface for working with number fields. It is
 written in Java and runs on top of the computer algebra system [KASH 2.5](http://www.math.tu-berlin.de/~kant/kash.html). In its present state it can be used for teaching and presentations.
